@@ -9,7 +9,7 @@ The main aim of this project is to understand how best we can utilize Apache Air
 
 **End to End Project Details:**
 
-1. Department and Employee CSV files are placed in to the GCS bucket as the source and as Destination of this project is again the GCS bucket, create a bucket named as output
+1. Department and Employee CSV files are placed in to the GCS bucket as the source and as Destination of this project is the GCS bucket with CSV file format, Please create a buckets for source files and output files as needed
 2. In the GCP Composer, Airflow 3 has been spin up and necessary permissions to the corresponding service account has been provided to make sure it connects to GCS bucket, Dataproc cluster, BQ services
 3. Once Airflow is up and running, In the Airflow DAGs folder, place the airflow_spark_job.py file
 4. Place the emp_batch_job.py in to the required GCS bucket
@@ -20,7 +20,7 @@ The main aim of this project is to understand how best we can utilize Apache Air
 9. After triggering the DAG, your DAG first step which is creation of the Ephemeral Dataproc Cluster will take 5-10 minutes of the time, while the rest of the tasks with take less amount of the time
 10. During Dataproc cluster creation, you can go to Dataproc service and verifiy whether your cluster is creating or not and check the logs as needed
 11. Once all the tasks in the DAG is completed, you should see CSV file in the output folder mentioned in the code, Please verify and compare the datasets with source datasets to see proper filter of the data has occured or not
-12. In this Whole process, We are leveraging concepts of unitilizing a Ephemeral Dataproc Cluster to process our Pyspark Job leveraging Airflow as Orchestorator Tool and Terminating the Dataproc Cluster once DAG ran to success.
+12. In this whole process, We are leveraging concepts of utilizing a Ephemeral Dataproc Cluster to process our Pyspark Job leveraging Airflow as Orchestorator Tool and Terminating the Dataproc Cluster once DAG/Pyspark Job completed to success.
 
 
 **Required Permissions grants for Default Service Account in GCP:**
