@@ -23,6 +23,14 @@ The main aim of this project is to understand how best we can utilize Apache Air
 12. In this Whole process, We are leveraging concepts of unitilizing a Ephemeral Dataproc Cluster to process our Pyspark Job leveraging Airflow as Orchestorator Tool and Terminating the Dataproc Cluster once DAG ran to success.
 
 
+**Required Permissions grants for Default Service Account in GCP:**
+
+Please make sure to include below roles in the GCP default service account you are using in the Airflow setup to avoid any access issues during the DAG execution process and Dataproc Cluster creation process
+
+
+<img width="885" height="552" alt="image" src="https://github.com/user-attachments/assets/3417c3c2-1c6d-4239-8c49-1ce16c1036a5" />
+
+
 **Spark code Python File URL:**
 
 https://github.com/ViinayKumaarMamidi/GCP_Airflow_Dataproc_Pyspark_Project/blob/main/emp_batch_job.py
