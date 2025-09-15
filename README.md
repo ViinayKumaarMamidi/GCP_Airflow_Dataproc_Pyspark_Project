@@ -25,8 +25,12 @@ The main aim of this project is to understand how best we can utilize Apache Air
 
 **Spark code Python File URL: **
 
+https://github.com/ViinayKumaarMamidi/GCP_Airflow_Dataproc_Pyspark_Project/blob/main/emp_batch_job.py
 
 **Airflow DAG File URL: **
+
+https://github.com/ViinayKumaarMamidi/GCP_Airflow_Dataproc_Pyspark_Project/blob/main/airflow_spark_job.py
+
 
 
 **End to End Airflow Dag: **
