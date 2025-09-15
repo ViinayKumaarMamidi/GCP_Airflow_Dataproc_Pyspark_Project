@@ -2,12 +2,12 @@
 
 This repo contains details about leveraging the Airflow in the GCP Composer and running the Ephemeral Dataproc Cluster to run Pyspark Job and Orchestrate within the Airflow, Thanks
 
-**Project Goal: **
+**Project Goal:**
 
 The main aim of this project is to understand how best we can utilize Apache Airflow inside GCP Cloud Composer to run a Pyspark Job by leveraging Ephemeral Dataproc Cluster for data processing. Thanks
 
 
-**End to End Project Details: **
+**End to End Project Details:**
 
 1. Department and Employee CSV files are placed in to the GCS bucket as the source and as Destination of this project is again the GCS bucket, create a bucket named as output
 2. In the GCP Composer, Airflow 3 has been spin up and necessary permissions to the corresponding service account has been provided to make sure it connects to GCS bucket, Dataproc cluster, BQ services
@@ -23,17 +23,16 @@ The main aim of this project is to understand how best we can utilize Apache Air
 12. In this Whole process, We are leveraging concepts of unitilizing a Ephemeral Dataproc Cluster to process our Pyspark Job leveraging Airflow as Orchestorator Tool and Terminating the Dataproc Cluster once DAG ran to success.
 
 
-**Spark code Python File URL: **
+**Spark code Python File URL:**
 
 https://github.com/ViinayKumaarMamidi/GCP_Airflow_Dataproc_Pyspark_Project/blob/main/emp_batch_job.py
 
-**Airflow DAG File URL: **
+**Airflow DAG File URL:**
 
 https://github.com/ViinayKumaarMamidi/GCP_Airflow_Dataproc_Pyspark_Project/blob/main/airflow_spark_job.py
 
 
-
-**End to End Airflow Dag: **
+**End to End Airflow Dag:**
 
 <img width="1421" height="629" alt="image" src="https://github.com/user-attachments/assets/d6618579-1ac7-4865-bff9-ffd5e7a5a044" />
 
